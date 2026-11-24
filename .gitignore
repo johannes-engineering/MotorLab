@@ -6,3 +6,9 @@
 *.log
 *.bak
 *.swp
+
+# Build directories
+build/
+Build/
+build-*/
+cmake-build-*/
