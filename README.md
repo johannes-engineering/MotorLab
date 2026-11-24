@@ -18,7 +18,7 @@ Planned:
 - Simulation results visualization and analysis
 
 ## Technology Stack
-- **C++ / CMake:** Simulation engine and build system
+- **C++20 / CMake:** Simulation engine and build system
 - **Mermaid / arc42:** Software architecture documentation
 - **Git:** Versioning
 
