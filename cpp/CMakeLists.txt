@@ -7,8 +7,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_subdirectory(src/maths)
+add_subdirectory(src/simulation)
 add_subdirectory(src/model)
 add_subdirectory(src/controller)
+enable_testing()
+add_subdirectory(tests)
 
 add_executable(MotorLab
     src/main.cpp

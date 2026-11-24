@@ -25,7 +25,8 @@ namespace motorlab {
 		 * @param dt_s Positive simulation time step in seconds.
 		 * @param input_voltage_V Applied armature voltage in volts.
 		 * @param load External load inertia and resisting torque.
-		 * @pre dt_s > 0.
+		 * @throws std::invalid_argument if dt_s is non-finite or non-positive.
+		 *         The motor state is unchanged in this case.
 		 * @pre params.armature_inductance_H > 0.
 		 * @pre params.inertia_kgm2 + load.inertia_kgm2 > 0.
 		 */

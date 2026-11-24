@@ -1,11 +1,14 @@
 #include "DCMotor.hpp"
 #include "Load.hpp"
 #include "integration.hpp"
+#include "time_step.hpp"
 
 namespace motorlab
 {
     void DCMotor::step(double dt_s, double input_voltage_V, Load load)
     {
+        simulation::validateTimeStep(dt_s);
+
         // copy and store previous values so they can be safely overwritten
         double armature_current_old_A{ armature_current_A };
         double velocity_old_rad_s{ velocity_rad_s };

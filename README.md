@@ -34,7 +34,11 @@ See the project roadmap and commit history for development progress.
 
 ## Getting Started
 
-MotorLab requires CMake 3.23 or newer and a C++20 toolchain.
+MotorLab requires CMake 3.23 or newer, a C++20 toolchain, and GoogleTest.
+The test runner, CTest, is included with CMake. CMake looks for GoogleTest
+during configuration. If you use vcpkg, install the `gtest` package for your
+target triplet and configure CMake with the vcpkg toolchain file.
+
 From the repository root, configure the project and build the default target:
 
 ```sh
@@ -50,7 +54,7 @@ The example simulates two seconds of PID-controlled DC motor operation and print
 - [x] Create a first version of the software architecture documentation
 - [x] Implement a first electric motor model in C++
 - [x] Implement a first control algorithm (PID) in C++
-- [ ] Create first tests for the existing components
+- [x] Create first tests for the existing components
 - [ ] Introduce a simulation layer between the application entry point and the motor model/controllers
 - [ ] Export simulation results as CSV
 - [ ] Define and implement the C++ CLI (JSON parameter)

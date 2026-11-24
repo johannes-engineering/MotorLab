@@ -2,10 +2,12 @@ add_library(Controller)
 
 target_sources(Controller
     PRIVATE
-        pidcontroller.cpp
+        PIDController.cpp
 
     PUBLIC
         FILE_SET HEADERS
         FILES
-            pidcontroller.hpp
+            PIDController.hpp
 )
+
+target_link_libraries(Controller PRIVATE Simulation)

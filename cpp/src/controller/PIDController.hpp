@@ -28,8 +28,7 @@ namespace motorlab
          * @param max_output Upper control output limit.
          * @pre min_output <= max_output.
          */
-        explicit PIDController(double k_p, double k_i, double k_d, double min_output, double max_output)
-            : k_p{ k_p }, k_i{ k_i }, k_d{ k_d }, min_output { min_output }, max_output{ max_output } {}
+        explicit PIDController(double k_p, double k_i, double k_d, double min_output, double max_output);
 
         /**
          * Computes the limited control output and updates the integral state.
