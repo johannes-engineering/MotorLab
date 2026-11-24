@@ -16,4 +16,5 @@ target_sources(ModelLib
 target_link_libraries(ModelLib
 		PRIVATE
 		    Maths
+		    Simulation
 )

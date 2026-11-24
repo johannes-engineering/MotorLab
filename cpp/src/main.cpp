@@ -1,6 +1,6 @@
 #include "DCMotor.hpp"
 #include "Load.hpp"
-#include "pidcontroller.hpp"
+#include "PIDController.hpp"
 
 #include <iostream>
 #include <format>
@@ -34,13 +34,13 @@ void initial_test()
 
 	// Initialize an example PID controller
 	motorlab::PIDController pidController {
-		10, 0.5, 0,
+		10.0, 0.5, 0.0,
 		-params.nominal_voltage_V, params.nominal_voltage_V
 	};
-	const double setpoint{ 50 };
+	const double setpoint{ 50.0 };
 
 	// Initialize a load without any impact for completeness
-	motorlab::Load load { 0, 0 };
+	motorlab::Load load { 0.0, 0.0 };
 
 	// Run the simulation in a loop using a fixed step size
 	double dt_s{ 0.001 };
