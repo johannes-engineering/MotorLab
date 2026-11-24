@@ -33,7 +33,18 @@ This project is under active development. Features and architectural decisions m
 See the project roadmap and commit history for development progress.
 
 ## Getting Started
-Build and usage instructions will follow once the first runnable simulation is available.
+
+MotorLab requires CMake 3.23 or newer and a C++20 toolchain.
+From the repository root, configure the project and build the default target:
+
+```sh
+cmake -S cpp -B build
+cmake --build build
+```
+
+Run `MotorLab` (`MotorLab.exe` on Windows) from `build/` or its configuration subdirectory, such as `build/Debug/`.
+
+The example simulates two seconds of PID-controlled DC motor operation and prints the angular acceleration, velocity, and position at each millisecond. Press Enter after the final sample to exit.
 
 ## Roadmap
 - [x] Create a first version of the software architecture documentation
