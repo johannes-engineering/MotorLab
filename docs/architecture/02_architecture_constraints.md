@@ -7,6 +7,9 @@ integrate, test, and maintain each additional component must fit that capacity.
 
 ## Technical Constraints
 
+Windows is currently the only operating system available for local development.
+The developer must be able to build and test MotorLab on Windows.
+
 A standard Windows user must be able to run the simulator without administrator
 privileges. Any files MotorLab writes during normal use, including simulation
 results, must go to locations where that user has write access.
