@@ -21,11 +21,11 @@ Planned:
 - **C++20 / CMake:** Simulation engine and build system
 - **Mermaid / arc42:** Software architecture documentation
 - **Git:** Versioning
+- **GitHub Actions:** Automated C++ builds and tests on Windows x64
 
 Planned:
 - **Python:** GUI, simulation orchestration and data analysis
 - **SQLite / SQL:** Motor parameter persistence
-- **GitHub Actions:** Continuous integration, automated builds and testing
 
 ## Project Status
 This project is under active development. Features and architectural decisions may change as development progresses.
@@ -55,6 +55,7 @@ The example simulates two seconds of PID-controlled DC motor operation and print
 - [x] Implement a first electric motor model in C++
 - [x] Implement a first control algorithm (PID) in C++
 - [x] Create first tests for the existing components
+- [x] Implement a GitHub Actions workflow for building and testing
 - [ ] Introduce a simulation layer between the application entry point and the motor model/controllers
 - [ ] Export simulation results as CSV
 - [ ] Define and implement the C++ CLI (JSON parameter)
